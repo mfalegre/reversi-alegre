@@ -14,7 +14,7 @@
     </style>
     <script>
       function goToLobby(){
-        let username = $('#nameInput').val();
+        let username = encodeURI($('#nameInput').val());
     window.location.href = "lobby.html?username="+username;
   }
   </script>
@@ -22,6 +22,8 @@
    <title>Reversi</title>
   </head>
   <body>
+
+
 
     <div class="container-fluid">
       <div class="row m-3">
@@ -31,28 +33,24 @@
         <div class="col text-center">
           <a class="btn btn-success text-nowrap" href="https://en.wikipedia.org/wiki/Reversi">RULES</a>
         </div>
-
 </div>
-      </div>
-
       <div class="row m-3">
         <div class="col text-center">
           <img class="img-fluid" src="assets/images/top-splash.png" alt="Reversi Logo 1"/>
-        </div> 
-        
+        </div>   
       </div>
-    
-
       <div class="row align-items-center justify-content-center m-3">
         <div class="col-8">
           <div class="input-group">
           <span class="input-group-text" id="displayName">Name</span>
-          <input type="text" class="form-control text-nowrap" id="nameInput" placeholder="Choose Your Display Name" aria-label="Enter your display name for use while playing Reversi" aria-describedby="displayName" />
-          <button type="submit" class="btn btn-primary text-nowrap" id="lobbyButton" onclick="goToLobby()">Enter Lobby</button>
+          <input type="text" class="form-control text-nowrap" id="nameInput" placeholder="Choose Your Display Name" 
+          aria-label="Enter your display name for use while playing Reversi" aria-describedby="displayName" />
+          <button type="submit" class="btn btn-primary text-nowrap" id="lobbyButton" 
+          onclick="goToLobby()">Enter Lobby</button>
         
       </div>
-
-
+    </div>
+    </div>
       <div class="row m-3">
         <div class="col text-center">
           <img class="img-fluid" src="assets/images/bottom-splash.png" alt="Five Reversi Tokens"/>
