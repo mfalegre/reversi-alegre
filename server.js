@@ -853,10 +853,10 @@ function send_game_update(socket, game_id, message) {
     if (legal_moves === 0) {
         let winner = "Tie Game";
         if (whitesum > blacksum) {
-            winner = "white";
+            winner = "light pink";
         }
         if (whitesum < blacksum) {
-            winner = "black";
+            winner = "dark purple";
         }
 
 
