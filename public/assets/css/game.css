@@ -24,6 +24,7 @@
     }
 
     table#game_board td{
+        background-color: white;
         border:1px solid black;
         margin:0px;
         padding:0px;
@@ -31,4 +32,8 @@
 
     td.hovered_over:hover {
       background-image: url('/assets/images/hover.gif');
+    }
+
+    .progress{
+      max-width: 527px;
     }
