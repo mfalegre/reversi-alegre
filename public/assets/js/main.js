@@ -290,10 +290,10 @@ socket.on('game_update', (payload) => {
     }
 
     if (my_color === 'white') {
-        $("#my_color").html('<h3 id="my_color">I am light pink</h3>');
+        $("#my_color").html('<h3 id="my_color">I am light pink!</h3>');
     }
     else if (my_color === 'black') {
-        $("#my_color").html('<h3 id="my_color">I am dark purple</h3>');
+        $("#my_color").html('<h3 id="my_color">I am dark purple!</h3>');
     }
     else {
         $("#my_color").html('<h3 id="my_color">Error: I don\t know what color I am</h3>');
